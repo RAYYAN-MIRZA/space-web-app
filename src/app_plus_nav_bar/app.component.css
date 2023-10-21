@@ -146,12 +146,14 @@ a {
         right: 0;
         display: flex;
         position: absolute;
-        gap: 3rem;
         justify-content: right;
         width: fit-content;
         height: max-content;
         font-size: 10px;
         font-weight: 100;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1rem;
     }
 
     .section {
@@ -178,9 +180,6 @@ a {
     }
 }
 
-
-
-
 @media screen and (max-width: 342px) {
     ul {
         display: none;
@@ -190,17 +189,6 @@ a {
         display: flex;
         font-size: 15px;
     }
-
-    .ham_menu {
-        top:0;
-        margin: 0;
-        padding: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
     .hamburg {
         right: 0;
         display: flex;
