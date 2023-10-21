@@ -101,7 +101,7 @@ a {
     right: 0;
     backdrop-filter: blur(40px);
     color: #ffffff;
-    width: 100%;
+    width: 70%;
     height: 100vh;
     position: absolute;
     justify-self: right;
@@ -118,7 +118,7 @@ a {
 
 .small-section {
     display: flex;
-    /* padding-left: 3rem; */
+    padding-left: 3rem;
     cursor: pointer;
 }
 
