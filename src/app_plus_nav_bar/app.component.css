@@ -1,0 +1,222 @@
+/* Reset default margin and padding for the list and anchor tags */
+/* ul, */
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    backdrop-filter: blur(40px);
+    /* Adjust the blur radius as needed*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 12px;
+    gap: 2.5rem;
+    padding-right: 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: Bellefair;
+}
+
+a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.logo {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.logo_img {
+    animation: 6s ease-in alternate infinite logi;
+}
+
+@keyframes logi {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.horizontal-line {
+    background-color: rgba(255, 255, 255, 0.311);
+    width: 100%;
+    height: 0.1px;
+    align-self: center;
+    position: relative;
+    z-index: 2;
+    left: 1.25rem;
+}
+
+.section {
+    border: none;
+    padding: 1rem 0rem;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-weight: 100;
+    font-size: 8px;
+}
+
+.num {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.active {
+    box-shadow: 0 2px 0px white;
+}
+
+.section:hover {
+    box-shadow: 0 2px 0px white;
+}
+
+
+
+
+/*********/
+
+/* Default text style */
+.ho::before {
+    /* content: "00 HOME"; */
+}
+
+.hamburg {
+    display: none;
+}
+
+.ham_menu {
+    display: none;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(40px);
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    justify-self: right;
+    justify-content: right;
+    gap: 2rem;
+    border: 2px solid lime;
+}
+
+.cross {
+    display: flex;
+    justify-content: right;
+    padding: 2rem 3.5rem;
+}
+
+.small-section {
+    display: flex;
+    /* padding-left: 3rem; */
+    cursor: pointer;
+}
+
+.small-section:hover {
+    border-right: 3px solid white;
+}
+
+.ham:hover {
+    background-color: bisque;
+}
+
+.small_active {
+    border-right: 3px solid white;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 770px) {
+    .num {
+        display: none;
+    }
+
+    ul {
+        top: 0;
+        margin: 0;
+        right: 0;
+        display: flex;
+        position: absolute;
+        gap: 3rem;
+        justify-content: right;
+        width: fit-content;
+        height: max-content;
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    .section {
+        margin: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .logo {
+        padding: 0.5rem 1rem;
+        width: 40%;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 342px) {
+    ul {
+        display: none;
+    }
+
+    .num {
+        display: flex;
+        font-size: 15px;
+    }
+
+    .ham_menu {
+        top:0;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hamburg {
+        right: 0;
+        display: flex;
+        width: 60%;
+        justify-content: right;
+    }
+
+    .logo {
+        padding: 0;
+        width: 30%;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+        padding: 1rem 1rem;
+    }
+
+}

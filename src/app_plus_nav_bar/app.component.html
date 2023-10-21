@@ -1,0 +1,46 @@
+<nav>
+    <div class="logo">
+        <img class="logo_img" src="../assets/starter-code/assets/shared/logo.svg" alt="">
+    </div>
+    <div class="horizontal-line">
+    </div>
+    <ul>
+        <div class="home">
+            <button routerLink="/home" class="ho section" routerLinkActive="active"
+                [routerLinkActiveOptions]={exact:true}><span class="num">00</span>&#160;&#160;HOME</button>
+        </div>
+        <div class="destiny">
+            <button routerLink="/destination" class="section" routerLinkActive="active"><span
+                    class="num">01</span>&#160;&#160;DESTINATION</button>
+        </div>
+        <div class="crew">
+            <button routerLink="/crew" class="section" routerLinkActive="active"><span
+                    class="num">02</span>&#160;&#160;CREW</button>
+        </div>
+        <div class="tech ">
+            <button routerLink="/technology" class="section" routerLinkActive="active"><span
+                    class="num">03</span>&#160;&#160;TECHNOLOGY</button>
+        </div>
+    </ul>
+    <div class="hamburg">
+        <img class="ham" (click)="open_ham()" src="../assets/starter-code/assets/shared/icon-hamburger.svg" alt="">
+    </div>
+</nav>
+<div class="ham_menu">
+    <div class="cross">
+        <img class="cross_button" (click)="close_ham()" src="../assets/starter-code/assets/shared/icon-close.svg"
+            alt="">
+    </div>
+    <div class="home small-section" routerLink="/home" routerLinkActive="small_active"
+        [routerLinkActiveOptions]={exact:true}><span class="num">00</span> &#160;&#160;HOME
+    </div>
+    <div class="destini small-section" routerLink="/destination" routerLinkActive="small_active"><span
+            class="num">01</span>&#160;&#160;DESTINATION</div>
+    <div class="crew small-section" routerLink="/crew" routerLinkActive="small_active"> <span
+            class="num">02</span>&#160;&#160;CREW</div>
+    <div class="tech small-section" routerLink="/technology" routerLinkActive="small_active"><span
+            class="num">03</span>&#160;&#160;TECHNOLOGY</div>
+</div>
+<!-- </nav> -->
+
+<router-outlet></router-outlet>

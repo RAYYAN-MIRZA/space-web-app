@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    background-image: url("../../space-web-app/src/assets/starter-code/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    font-family: 'Bellefair';
+    /* background-size: cover;
+    background-position: center;
+    height: 100vh; */
+}
+
+@media(max-width:770px){
+    body{
+        background-image: url("../../space-web-app/src/assets/starter-code/assets/home/background-home-tablet.jpg");
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width:342px){
+    body{
+        background-image: url("../../space-web-app/src/assets/starter-code/assets/home/background-home-mobile.jpg");
+        background-repeat: no-repeat;
+    }
+}
