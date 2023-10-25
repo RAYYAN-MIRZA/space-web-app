@@ -1,5 +1,57 @@
-p{
+p {
     background-color: aqua;
 }
-body{
+
+.container {
+    border: 2px solid lime;
+}
+
+.planet-container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid lime;
+}
+
+.distance-container{
+    display: flex;
+    gap: 2rem;
+}
+.planet-name{
+    color: white;
+}
+.planet-about{
+    color: white;    
+}
+.distance{
+    color: white;
+}
+.travel{
+    color: white;
+}
+/*********************                 navbar              *****************************/
+nav {
+    display: flex;
+}
+
+ul {
+    color: white;
+}
+
+
+.planet-image {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.planet-info {
+    display: flex;
+    width: 50%;
+    border: 2px solid rgb(166, 0, 255);
+    flex-direction: column;
+}
+
+
+header {
+    color: white;
 }

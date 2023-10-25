@@ -1,7 +1,6 @@
 p {
     background-color: rgb(167, 37, 37);
 }
-
 .container {
     margin-top: 5rem;
     height: 100vh;
@@ -88,7 +87,7 @@ p {
 
 
 @media(max-width:770px) {
-
+        /* background-image: url('../../assets/starter-code/assets/home/background-home-tablet.jpg'); */
     .welcome_small {
         width: fit-content;
         gap: 1rem;
@@ -162,6 +161,7 @@ p {
 }
 
 @media(max-width:365px) {
+
     .welcome_small {
         gap: 1rem;
     }

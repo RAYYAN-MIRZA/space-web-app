@@ -5,6 +5,7 @@ import { DestinyComponent } from 'src/pages/destiny/destiny.component';
 import { HomeComponent } from 'src/pages/home/home.component';
 import { TechComponent } from 'src/pages/tech/tech.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:'home',component:HomeComponent},

@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --image-path-desktop: url('../../space-web-app/src/assets/starter-code/assets/home/background-home-desktop.jpg');
+    --image-path-tablet:url('../../space-web-app/src/assets/starter-code/assets/home/background-home-tablet.jpg');
+    --image-path-mobile:url('../../space-web-app/src/assets/starter-code/assets/home/background-home-mobile.jpg');
+  }
 *{
     margin: 0;
     padding: 0;
@@ -9,24 +14,21 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-image: url("../../space-web-app/src/assets/starter-code/assets/home/background-home-desktop.jpg"); */
+    background-image:var(--image-path-desktop);      
     background-repeat: no-repeat;
     font-family: 'Bellefair';
-    /* background-size: cover;
-    background-position: center;
-    height: 100vh; */
 }
 
 @media(max-width:770px){
     body{
-        background-image: url("../../space-web-app/src/assets/starter-code/assets/home/background-home-tablet.jpg");
+        background-image:var(--image-path-tablet); 
         background-repeat: no-repeat;
     }
 }
 
 @media(max-width:342px){
     body{
-        background-image: url("../../space-web-app/src/assets/starter-code/assets/home/background-home-mobile.jpg");
+        background-image:var(--image-path-mobile); 
         background-repeat: no-repeat;
     }
 }
