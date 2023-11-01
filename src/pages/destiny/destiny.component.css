@@ -1,9 +1,5 @@
-p {
-    /* background-color: aqua; */
-}
-
 .container {
-    border: 2px solid lime;
+    /* border: 2px solid lime; */
     display: flex;
     flex-direction: column;
     color: white;
@@ -12,19 +8,19 @@ p {
 .planet-container {
     display: flex;
     justify-content: center;
-    border: 2px solid lime;
-    /* padding: 1rem 6rem 1rem 6rem; */
+    /* border: 2px solid lime; */
+    /* padding: 1rem 6rem 1rem 6rem;*/
 }
 
 .distance-travel-container {
     display: flex;
-    gap: 8rem;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    justify-content: space-between;
 }
 
 header {
     padding: 1rem 0rem 1rem 9rem;
-    border: 2px solid rgb(255, 98, 0);
+    /* border: 2px solid rgb(255, 98, 0); */
     display: flex;
     justify-content: left;
     color: #FFF;
@@ -32,9 +28,6 @@ header {
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4.725px;
-    text-transform: uppercase;
 }
 
 span {
@@ -48,7 +41,7 @@ span {
     opacity: 0.25;
 }
 
-img {
+.actual-planet-image {
     width: 445px;
     height: 445px;
 }
@@ -112,7 +105,7 @@ img {
 .planet-info {
     display: flex;
     width: 50%;
-    border: 2px solid rgb(166, 0, 255);
+    /* border: 2px solid rgb(166, 0, 255); */
     flex-direction: column;
     padding: 3rem;
     gap: 1.75rem;
@@ -120,14 +113,12 @@ img {
 
 .horizontal-line {
     border: 0.5px solid rgba(255, 255, 255, 0.322);
-    height: 100%;
-
 }
 
 
 .dist-box {
     display: flex;
-    border: 2px solid bisque;
+    /* border: 2px solid bisque; */
     flex-direction: column;
     gap: 0.75rem;
 }
@@ -135,8 +126,9 @@ img {
 .travel-box {
     gap: 0.75rem;
     display: flex;
-    border: 2px solid bisque;
+    /* border: 2px solid bisque; */
     flex-direction: column;
+    padding-left: 1rem;
 }
 
 .dist-heading {
@@ -148,7 +140,9 @@ img {
     line-height: normal;
     letter-spacing: 2.362px;
     text-transform: uppercase;
+    width: max-content;
 }
+
 
 .dist-travel-info {
     color: #FFF;
@@ -158,4 +152,214 @@ img {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    width: max-content;
+
+}
+
+/*        media queary sss          */
+
+/* CSS rules for devices with a width between 768px and 991px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header {
+        padding-left: 6rem;
+    }
+
+    .actual-planet-image {
+        width: 345px;
+        height: 345px;
+    }
+
+}
+
+/* CSS rules for devices with a width below 768px   */
+@media(max-width:768px) {
+    #planet-nav {
+        justify-content: center;
+    }
+
+    .planet-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .horizontal-line-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .horizontal-line {
+        width: 80%;
+    }
+
+    .planet-info {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .planet-image {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    header {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: left;
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.375px;
+        text-transform: uppercase;
+    }
+
+    span {
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.375px;
+    }
+
+    .distance-travel-container {
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .actual-planet-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .planet-name {
+        color: #FFF;
+        text-align: center;
+        font-family: Bellefair;
+        font-size: 80px;
+        font-style: normal;
+    }
+
+    .planet-about {
+        color: #D0D6F9;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .dist-heading {
+        color: #D0D6F9;
+        text-align: center;
+        font-family: Barlow Condensed;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.362px;
+        text-transform: uppercase;
+    }
+
+    .dist-travel-info {
+        color: #FFF;
+        text-align: center;
+        font-family: Bellefair;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .planets-nav-elems {
+        color: #D0D6F9;
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+    }
+}
+
+@media(max-width:405px) {
+
+    header {
+        width: max-content;
+        font-family: Barlow Condensed;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        text-wrap: wrap;
+        justify-content: center;
+    }
+
+    span {
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        text-wrap: wrap;
+    }
+
+    .planet-container {
+        gap: 1rem;
+    }
+
+    .actual-planet-image {
+        width: 170px;
+        height: 170px;
+    }
+
+    .planets-nav-elems {
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.362px;
+    }
+
+    .planet-info {
+        color: #D0D6F9;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .distance-travel-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .dist-box {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .travel-box {
+        align-items: center;
+        padding: 0;
+    }
+
 }

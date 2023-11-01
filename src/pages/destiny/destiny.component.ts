@@ -49,8 +49,8 @@ export class DestinyComponent implements AfterViewInit {
     this.planets_nav_elems = document.getElementsByClassName("planets-nav-elems") as HTMLCollectionOf<HTMLElement>;
     this.body = document.querySelector("body") as HTMLElement;
     this.display_planet = this.planets_data[0];
-    this.planets_nav_elems[0].style.boxShadow=" 0px 2px 0px 0px white";
-    console.log("xcxc",this.display_planet.planet_image);
+    this.planets_nav_elems[0].style.boxShadow = " 0px 2px 0px 0px white";
+    console.log("xcxc", this.display_planet.planet_image);
   }
 
   constructor(private router: Router) {
@@ -72,30 +72,30 @@ export class DestinyComponent implements AfterViewInit {
 
   }
   planet_change(planet: number): void {
-    for(let i=0;i<this.planets_nav_elems.length;i++){
-      this.planets_nav_elems[i].style.boxShadow='none';
+    for (let i = 0; i < this.planets_nav_elems.length; i++) {
+      this.planets_nav_elems[i].style.boxShadow = 'none';
     }
-    this.planets_nav_elems[0].style.boxShadow="none";
+    this.planets_nav_elems[0].style.boxShadow = "none";
     switch (planet) {
       case 0:
         this.display_planet = this.planets_data[0];
-        this.planets_nav_elems[0].style.boxShadow=" 0px 2px 0px 0px white";
+        this.planets_nav_elems[0].style.boxShadow = " 0px 2px 0px 0px white";
         break;
       case 1:
         this.display_planet = this.planets_data[1];
-        this.planets_nav_elems[1].style.boxShadow=" 0px 2px 0px 0px white";
+        this.planets_nav_elems[1].style.boxShadow = " 0px 2px 0px 0px white";
         break;
       case 2:
         this.display_planet = this.planets_data[2];
-        this.planets_nav_elems[2].style.boxShadow=" 0px 2px 0px 0px white";
+        this.planets_nav_elems[2].style.boxShadow = " 0px 2px 0px 0px white";
         break;
       case 3:
         this.display_planet = this.planets_data[3];
-        this.planets_nav_elems[3].style.boxShadow=" 0px 2px 0px 0px white";
+        this.planets_nav_elems[3].style.boxShadow = " 0px 2px 0px 0px white";
         break;
       default:
         this.display_planet = this.planets_data[0];
-        this.planets_nav_elems[0].style.boxShadow=" 0px 2px 0px 0px white";
+        this.planets_nav_elems[0].style.boxShadow = " 0px 2px 0px 0px white";
         break;
     }
     this.display_planet.name = this.display_planet.name.toUpperCase();
