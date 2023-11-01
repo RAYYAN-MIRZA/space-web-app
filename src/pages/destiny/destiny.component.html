@@ -1,38 +1,37 @@
-<p>destiny works!</p>
 <!-- <img  class="destiny-bg" src="../../assets/starter-code/assets/destination/background-destination-mobile.jpg" alt=""> -->
 <div class="container">
-    <header><span>01</span> PICK YOUR DESTINATION</header>
+    <header><span>01</span>&nbsp;PICK YOUR DESTINATION</header>
     <div class="planet-container">
         <div class="planet-image">
-            <img src="../../assets/starter-code/assets/destination/image-moon.png" alt="">
+            <img src="{{display_planet.planet_image}}" alt="This was a planet's image">
         </div>
         <div class="planet-info">
             <div class="planets-nav">
                 <nav id="planet-nav">
-                    <ul (click)="planet_change(0)">MOON</ul>
-                    <ul (click)="planet_change(1)">MARS</ul>
-                    <ul (click)="planet_change(2)">EUPHORIA</ul>
-                    <ul (click)="planet_change(3)">TITAN</ul>
+                    <ul  class="planets-nav-elems"     (click)="planet_change(0)">MOON</ul>
+                    <ul  class="planets-nav-elems"     (click)="planet_change(1)">MARS</ul>
+                    <ul  class="planets-nav-elems"     (click)="planet_change(2)">EUPHORIA</ul>
+                    <ul  class="planets-nav-elems"     (click)="planet_change(3)">TITAN</ul>
                 </nav>
             </div>
             <div class="planet-name">{{display_planet.name}}</div>
             <div class="planet-about">{{display_planet.description}}</div>
             <div class="horizontal-line"></div>
-            <div class="distance-container">
-                <div>distance</div>
-                <div class="distance">
-                    {{display_planet.distance}}
+            <div class="distance-travel-container">
+                <div class="dist-box">
+                    <p class="dist-heading" >AVG. DISTANCE </p>
+                    <div class="dist-travel-info">
+                        {{display_planet.distance}}
+                    </div>
                 </div>
-                <div>travel</div>
-
-                
-                <div class="travel">
-                    {{display_planet.travel}}
+                <div class="travel-box">
+                    <p class="dist-heading">EST TRAVEL TIME</p>
+                    <div class="dist-travel-info">
+                        {{display_planet.travel}}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 </div>
+
