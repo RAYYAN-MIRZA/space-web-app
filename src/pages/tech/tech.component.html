@@ -1,1 +1,24 @@
-<p>tech works!</p>
+<header>
+    <span>03</span> SPACE LAUNCH 101
+</header>
+<div class="tech-container">
+    <div class="info-and-next">
+        <div class="next-boxes">
+            <button (click)="change_image(0)" class="next-buts">1</button>
+            <button (click)="change_image(1)" class="next-buts">2</button>
+            <button (click)="change_image(2)" class="next-buts">3</button>
+        </div>
+        <div class="tech-info">
+            <div class="tech-term">THE TERMINOLOGY</div>
+            <div class="tech-name">{{display_tech.name}}</div>
+            <div class="tech-descrip">{{display_tech.description}}</div>
+        </div>
+    </div>
+    <div class="tech-image">
+        <img class="portrait" src="{{display_tech.image_portrait}}" alt="">
+        <img class="landscape" src="{{display_tech.image_landscape}}" alt="">
+    </div>
+</div>
+
+
+<!-- <img src="../../assets/starter-code/assets/technology/image-spaceport-landscape.jpg" alt=""> -->
