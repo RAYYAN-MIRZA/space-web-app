@@ -1,0 +1,324 @@
+header {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    padding: 0rem 0rem 0rem 8rem;
+}
+
+span {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+}
+
+.crew-container {
+    display: flex;
+
+}
+
+.crew-info {
+    display: flex;
+    width: 60%;
+    color: white;
+    /* border: 2px solid lime; */
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 8rem 3rem 5rem 8rem;
+}
+
+.crew-occupation {
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5042;
+}
+
+.member-name {
+    width: max-content;
+    color: #FFF;
+    text-wrap: wrap;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.member-description {
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.crew-next-bar-two {
+    display: none;
+}
+
+.crew-next-bar {
+    /* border: 2px solid lime; */
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 3.5rem;
+    position: relative;
+}
+
+.next-button {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    opacity: 0.1744;
+    background-color: #FFF;
+    border: none;
+}
+
+.next-button:hover {
+    opacity: 1;
+}
+
+.crew-image {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* border: 2px solid rgb(111, 0, 255); */
+    margin-top: -2rem;
+    padding: 0rem 2rem 0rem 2rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.immg {
+    width: 568.072px;
+    height: 712px;
+    flex-shrink: 0;
+}
+
+
+@media (max-width:1070px) {
+    .member-name {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:900px) {
+    header {
+        padding-left: 6rem;
+
+    }
+
+    .crew-info {
+        padding-left: 6rem;
+    }
+
+    .member-name {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .crew-container {
+        flex-direction: column;
+    }
+
+    header {
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.375px;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+
+    span {
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 3.375px;
+        opacity: 0.25;
+    }
+
+
+    .crew-info {
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+        align-items: center;
+        width: 100%;
+    }
+
+    .crew-occupation {
+        margin-top: 1rem;
+        color: #FFF;
+        text-align: center;
+        font-family: Bellefair;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .member-name {
+        color: #FFF;
+        text-align: center;
+        font-family: Bellefair;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .member-description {
+        color: #D0D6F9;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        width: 70%;
+    }
+
+    .crew-image {
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .immg {
+        width: 456.372px;
+        height: 572px;
+        flex-shrink: 0;
+    }
+
+    .crew-next-bar {
+        padding: 0;
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width:438px) {
+    header {
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+    }
+
+    span {
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.7px;
+    }
+
+    .immg {
+        width: 177.123px;
+        height: 222px;
+        flex-shrink: 0;
+    }
+
+    .crew-occupation {
+        color: #FFF;
+        text-align: center;
+        font-family: Bellefair;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .member-name {
+        color: #FFF;
+        text-align: center;
+        font-family: Bellefair;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .member-description {
+        color: #D0D6F9;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        /* 166.667% */
+    }
+
+    .crew-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .crew-next-bar {
+        display: none;
+    }
+
+    .crew-image {
+        border-bottom: 0.5px solid #383b4b;
+         /* rgba(220, 220, 220, 0.367); */
+        width: 90%;
+    }
+
+    .crew-next-bar-two {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .next-button-two {
+        width: 10px;
+        height: 10px;
+        flex-shrink: 0;
+        border: none;
+        border-radius: 10px;
+        background: #FFF;
+        opacity: 0.1744;
+    }
+
+    .next-button-two:hover {
+        opacity: 1;
+    }
+
+}
