@@ -38,7 +38,7 @@ a {
 }
 
 .logo_img {
-    animation: 6s ease-in alternate infinite logi;
+    animation: 16s linear alternate infinite logi;
 }
 
 @keyframes logi {
