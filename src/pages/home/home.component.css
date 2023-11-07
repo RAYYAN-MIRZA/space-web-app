@@ -1,6 +1,7 @@
 p {
     background-color: rgb(167, 37, 37);
 }
+
 .container {
     margin-top: 5rem;
     height: 100vh;
@@ -65,6 +66,7 @@ p {
     border-radius: 100%;
 }
 
+
 .exp_button {
     border: none;
     cursor: pointer;
@@ -78,16 +80,23 @@ p {
     background-color: white;
 }
 
-.exp_button:hover {
-    /* box-shadow: 0px 10px 19px rgba(248, 215, 215, 0.5); */
-    box-shadow:
-        0 0 0 2.5rem rgba(255, 255, 255, 0.357);
-    /* 0 0 0 4em #66ccff;       */
+@keyframes exp_anime {
+    0% {
+        box-shadow:
+            0 0 0 0.5rem rgba(255, 255, 255, 0.357);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 2rem rgba(255, 255, 255, 0.357);
+    }
 }
 
+.exp_button:hover {
+    animation: exp_anime ease-in-out 2s;
+}
 
 @media(max-width:770px) {
-        /* background-image: url('../../assets/starter-code/assets/home/background-home-tablet.jpg'); */
     .welcome_small {
         width: fit-content;
         gap: 1rem;
@@ -127,10 +136,12 @@ p {
     }
 
 }
+
 @media(max-width:451px) {
     .welcome_small {
         gap: 1rem;
     }
+
     .text1 {
         text-wrap: wrap;
         color: #D0D6F9;
@@ -165,6 +176,7 @@ p {
     .welcome_small {
         gap: 1rem;
     }
+
     .text1 {
         text-wrap: wrap;
         color: #D0D6F9;

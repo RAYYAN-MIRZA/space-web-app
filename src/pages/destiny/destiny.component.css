@@ -155,6 +155,17 @@ span {
     width: max-content;
 
 }
+.actual-planet-image{
+    animation: rotate 130s linear infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 /*        media queary sss          */
 

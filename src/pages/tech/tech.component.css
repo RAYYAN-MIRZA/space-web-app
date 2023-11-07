@@ -33,6 +33,7 @@ span {
 .tech-container {
     display: flex;
     margin-top: 1.5rem;
+    width: 100%;
 }
 
 .info-and-next {
@@ -43,7 +44,7 @@ span {
 .next-boxes {
     display: flex;
     flex-direction: column;
-    padding: 6rem 0rem 0rem 8rem;
+    padding: 6rem 0rem 0rem 8rem;   
     gap: 2rem;
     /* width: 20%; */
 }
