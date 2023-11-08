@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --image-path-desktop: url('../../space-web-app/src/assets/starter-code/assets/home/background-home-desktop.jpg');
-    --image-path-tablet:url('../../space-web-app/src/assets/starter-code/assets/home/background-home-tablet.jpg');
-    --image-path-mobile:url('../../space-web-app/src/assets/starter-code/assets/home/background-home-mobile.jpg');
+    --image-path-desktop: url('./assets/starter-code/assets/home/background-home-desktop.jpg');
+    /* --image-path-desktop: url('../../space-web-app/src/assets/starter-code/assets/home/background-home-desktop.jpg'); */
+    --image-path-tablet:url('./assets/starter-code/assets/home/background-home-tablet.jpg');
+    --image-path-mobile:url('./assets/starter-code/assets/home/background-home-mobile.jpg');
   }
 *{
     margin: 0;
