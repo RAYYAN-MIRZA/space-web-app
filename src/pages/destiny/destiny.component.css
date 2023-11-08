@@ -1,5 +1,4 @@
 .container {
-    /* border: 2px solid lime; */
     display: flex;
     flex-direction: column;
     color: white;
@@ -8,19 +7,15 @@
 .planet-container {
     display: flex;
     justify-content: center;
-    /* border: 2px solid lime; */
-    /* padding: 1rem 6rem 1rem 6rem;*/
 }
 
 .distance-travel-container {
     display: flex;
-    /* border: 2px solid blue; */
     justify-content: space-between;
 }
 
 header {
     padding: 1rem 0rem 1rem 9rem;
-    /* border: 2px solid rgb(255, 98, 0); */
     display: flex;
     justify-content: left;
     color: #FFF;
@@ -105,7 +100,6 @@ span {
 .planet-info {
     display: flex;
     width: 50%;
-    /* border: 2px solid rgb(166, 0, 255); */
     flex-direction: column;
     padding: 3rem;
     gap: 1.75rem;
@@ -118,7 +112,6 @@ span {
 
 .dist-box {
     display: flex;
-    /* border: 2px solid bisque; */
     flex-direction: column;
     gap: 0.75rem;
 }
@@ -126,7 +119,6 @@ span {
 .travel-box {
     gap: 0.75rem;
     display: flex;
-    /* border: 2px solid bisque; */
     flex-direction: column;
     padding-left: 1rem;
 }
@@ -155,19 +147,20 @@ span {
     width: max-content;
 
 }
-.actual-planet-image{
+
+.actual-planet-image {
     animation: rotate 130s linear infinite;
 }
+
 @keyframes rotate {
-    from{
-        transform: rotate(0deg);        
+    from {
+        transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
-
-/*        media queary sss          */
 
 /* CSS rules for devices with a width between 768px and 991px */
 

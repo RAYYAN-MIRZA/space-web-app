@@ -30,7 +30,6 @@ span {
     display: flex;
     width: 60%;
     color: white;
-    /* border: 2px solid lime; */
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
@@ -73,7 +72,6 @@ span {
 }
 
 .crew-next-bar {
-    /* border: 2px solid lime; */
     display: flex;
     gap: 1.5rem;
     padding-top: 3.5rem;
@@ -97,7 +95,6 @@ span {
     display: flex;
     flex-direction: column;
     width: 40%;
-    /* border: 2px solid rgb(111, 0, 255); */
     margin-top: -2rem;
     padding: 0rem 2rem 0rem 2rem;
     justify-content: flex-end;
@@ -297,7 +294,6 @@ span {
 
     .crew-image {
         border-bottom: 0.5px solid #383b4b;
-         /* rgba(220, 220, 220, 0.367); */
         width: 90%;
     }
 
