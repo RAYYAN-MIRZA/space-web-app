@@ -9,6 +9,7 @@ export class CrewComponent implements AfterViewInit {
   next_buttons!: HTMLCollectionOf<HTMLElement>;
   next_buttons_two!: HTMLCollectionOf<HTMLElement>;
   display_crew!: crew_interface;
+  isActive!:boolean;
   crew_data: crew_interface[] = [
     {
       occupation: "Commander",
@@ -37,10 +38,8 @@ export class CrewComponent implements AfterViewInit {
     }
   ]
   ngOnInit(): void {
-    console.log("Sasasas");
+    this.isActive=false;
     this.display_crew = this.crew_data[0];
-    console.log("sdsdsdsdsd===", this.display_crew);
-    console.log("xxx==", this.crew_data);
   }
   ngAfterViewInit(): void {
     this.next_buttons = document.getElementsByClassName('next-button') as HTMLCollectionOf<HTMLElement>;
@@ -50,12 +49,15 @@ export class CrewComponent implements AfterViewInit {
   }
 
   memberChange(num: number): void {
+    this.isActive=true;
+    
     for (let i = 0; i < this.next_buttons.length; i++){
       this.next_buttons[i].style.opacity = '0.174';
       this.next_buttons_two[i].style.opacity = "0.174";
     }
-
-    switch (num) {
+    
+    setTimeout(() => {
+      switch (num) {
       case 0:
         this.display_crew = this.crew_data[0];
         this.next_buttons[0].style.opacity = "1";
@@ -70,12 +72,14 @@ export class CrewComponent implements AfterViewInit {
         this.display_crew = this.crew_data[2];
         this.next_buttons[2].style.opacity = "1";
         this.next_buttons_two[2].style.opacity = "1";
-        break;
+        break ;
       case 3:
         this.display_crew = this.crew_data[3];
         this.next_buttons[3].style.opacity = "1";
         this.next_buttons_two[3].style.opacity = "1";
         break;
-    }
+      }
+      this.isActive=false;
+    },800);
   }
 }

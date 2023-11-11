@@ -1,5 +1,5 @@
 <header><span>02</span>&nbsp;MEET YOUR CREW</header>
-<div class="crew-container">
+<div class="crew-container" [ngClass]="{'ghayab': isActive, 'inactive': !isActive}">
     <div class="crew-info">
         <div class="crew-next-bar-two">
             <button (click)="memberChange(0)" class="next-button-two"></button>

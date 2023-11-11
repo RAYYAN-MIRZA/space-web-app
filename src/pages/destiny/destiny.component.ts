@@ -11,6 +11,7 @@ import { destiny_data } from './destiny-interface';
 
 export class DestinyComponent implements AfterViewInit {
   planets_nav_elems!: HTMLCollectionOf<HTMLElement>;
+  isActive!: boolean;
   body!: HTMLElement;
   current_route!: string;
   display_planet!: destiny_data;
@@ -44,7 +45,6 @@ export class DestinyComponent implements AfterViewInit {
       travel: "7 years"
     }
   ];
-
   ngAfterViewInit(): void {
     this.planets_nav_elems = document.getElementsByClassName("planets-nav-elems") as HTMLCollectionOf<HTMLElement>;
     this.body = document.querySelector("body") as HTMLElement;
@@ -72,35 +72,39 @@ export class DestinyComponent implements AfterViewInit {
 
   }
   planet_change(planet: number): void {
+    this.isActive = true;
     for (let i = 0; i < this.planets_nav_elems.length; i++) {
       this.planets_nav_elems[i].style.boxShadow = 'none';
     }
-    this.planets_nav_elems[0].style.boxShadow = "none";
-    switch (planet) {
-      case 0:
-        this.display_planet = this.planets_data[0];
-        this.planets_nav_elems[0].style.boxShadow = " 0px 2px 0px 0px white";
-        break;
-      case 1:
-        this.display_planet = this.planets_data[1];
-        this.planets_nav_elems[1].style.boxShadow = " 0px 2px 0px 0px white";
-        break;
-      case 2:
-        this.display_planet = this.planets_data[2];
-        this.planets_nav_elems[2].style.boxShadow = " 0px 2px 0px 0px white";
-        break;
-      case 3:
-        this.display_planet = this.planets_data[3];
-        this.planets_nav_elems[3].style.boxShadow = " 0px 2px 0px 0px white";
-        break;
-      default:
-        this.display_planet = this.planets_data[0];
-        this.planets_nav_elems[0].style.boxShadow = " 0px 2px 0px 0px white";
-        break;
-    }
-    this.display_planet.name = this.display_planet.name.toUpperCase();
-    this.display_planet.distance = this.display_planet.distance.toUpperCase();
-    this.display_planet.travel = this.display_planet.travel.toUpperCase();
+      this.planets_nav_elems[0].style.boxShadow = "none";
+    this.planets_nav_elems[planet].style.boxShadow = " 0px 2px 0px 0px white";
+    setTimeout(() => {
+      switch (planet) {
+        case 0:
+          this.display_planet = this.planets_data[0];
+          break;
+        case 1:
+          this.display_planet = this.planets_data[1];
+          this.planets_nav_elems[1].style.boxShadow = " 0px 2px 0px 0px white";
+          break;
+        case 2:
+          this.display_planet = this.planets_data[2];
+          this.planets_nav_elems[2].style.boxShadow = " 0px 2px 0px 0px white";
+          break;
+        case 3:
+          this.display_planet = this.planets_data[3];
+          this.planets_nav_elems[3].style.boxShadow = " 0px 2px 0px 0px white";
+          break;
+        default:
+          this.display_planet = this.planets_data[0];
+          this.planets_nav_elems[0].style.boxShadow = " 0px 2px 0px 0px white";
+          break;
+      }
+      this.display_planet.name = this.display_planet.name.toUpperCase();
+      this.display_planet.distance = this.display_planet.distance.toUpperCase();
+      this.display_planet.travel = this.display_planet.travel.toUpperCase();
+      this.isActive = false;
+    }, 1000);
   }
 
 }

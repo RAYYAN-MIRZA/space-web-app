@@ -23,9 +23,24 @@ span {
 
 .crew-container {
     display: flex;
+    width: 100%;
 
 }
+.ghayab{        
+    animation: 1.5s ease fade;
+}
 
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.0001;
+    }
+    100%{
+        opacity: 0.00000001;
+    }    
+}
 .crew-info {
     display: flex;
     width: 60%;
@@ -94,16 +109,15 @@ span {
 .crew-image {
     display: flex;
     flex-direction: column;
-    width: 40%;
     margin-top: -2rem;
-    padding: 0rem 2rem 0rem 2rem;
+    padding: 0rem 1rem 0rem 0rem;
     justify-content: flex-end;
     align-items: flex-start;
 }
 
 .immg {
-    width: 568.072px;
-    height: 712px;
+    /* width: 568.072px;
+    height: 712px; */
     flex-shrink: 0;
 }
 
@@ -202,16 +216,16 @@ span {
     }
 
     .crew-image {
+        width: auto;
         margin: 0;
         padding: 0;
         margin-top: 1rem;
-        width: 100%;
         align-items: center;
     }
 
     .immg {
         width: 456.372px;
-        height: 572px;
+        height: 572px;        
         flex-shrink: 0;
     }
 

@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { tech } from './tech-interface';
-import { style } from '@angular/animations';
 
 @Component({
   selector: 'app-tech',
@@ -11,6 +10,7 @@ export class TechComponent implements AfterViewInit {
   next_buttons!: HTMLCollectionOf<HTMLElement>
   current_button!: HTMLElement;
   display_tech!: tech;
+  isActive!:boolean;
   tech_data: tech[] = [
     {
       name: "Launch vehicle",
@@ -35,40 +35,38 @@ export class TechComponent implements AfterViewInit {
 
 
   ngOnInit(): void {
-
+    this.isActive=false;
     this.display_tech = this.tech_data[0];
   }
 
   ngAfterViewInit(): void {
     this.next_buttons = document.getElementsByClassName('next-buts') as HTMLCollectionOf<HTMLElement>
-    // this.next_buttons[0]=this.current_button;    
     this.next_buttons[0].style.backgroundColor = "white";
     this.next_buttons[0].style.color = "#0b0e17";
   }
 
   change_image(num: number): void {
+    this.isActive=true;
     for (let i = 0; i < 3; i++) {
       this.next_buttons[i].style.color = "white";
       this.next_buttons[i].style.backgroundColor = "transparent";
     }
+    this.next_buttons[num].style.backgroundColor = "white";
+    this.next_buttons[num].style.color = "#0b0e17";
+    setTimeout(() => {
     switch (num) {
       case 0:
-        this.next_buttons[0].style.color = "#0b0e17";
-        this.next_buttons[0].style.backgroundColor = "white";
         this.display_tech = this.tech_data[0];
         break;
       case 1:
-        this.next_buttons[1].style.color = "#0b0e17";
-        this.next_buttons[1].style.backgroundColor = "white";
         this.display_tech = this.tech_data[1];
         break;
       case 2:
-        this.next_buttons[2].style.color = "#0b0e17";
-        this.next_buttons[2].style.backgroundColor = "white";
         this.display_tech = this.tech_data[2];
         break;
-    }
-
+      }
+      this.isActive=false;
+    },800);
   }
 
 

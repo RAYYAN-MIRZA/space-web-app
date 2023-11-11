@@ -78,7 +78,25 @@ span {
     letter-spacing: 2.7px;
     gap: 1rem;
 }
+button.isActive{            
+    background-color: blue;                 
+}
 
+.ghayab{        
+    animation: 1.5s ease fade;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.0001;
+    }
+    100%{
+        opacity: 0.00000001;
+    }    
+}
 .planets-nav-elems {
     color: white;
     cursor: pointer;

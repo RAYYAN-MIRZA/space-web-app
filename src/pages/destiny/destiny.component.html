@@ -2,36 +2,40 @@
 <div class="container">
     <header><span>01</span>&nbsp;PICK YOUR DESTINATION</header>
     <div class="planet-container">
-        <div class="planet-image">
-            <img class="actual-planet-image" src="{{display_planet.planet_image}}" alt="This was a planet's image">
+        <div class="planet-image" [ngClass]="{'ghayab': isActive, 'inactive': !isActive}">
+            <img  class="actual-planet-image" src="{{display_planet.planet_image}}" alt="This was a planet's image">
         </div>
         <div class="planet-info">
             <div class="planets-nav">
                 <nav id="planet-nav">
+                    <!-- NG CLASS SE KARO OPACITY -->
                     <ul class="planets-nav-elems" (click)="planet_change(0)">MOON</ul>
                     <ul class="planets-nav-elems" (click)="planet_change(1)">MARS</ul>
                     <ul class="planets-nav-elems" (click)="planet_change(2)">EUPHORIA</ul>
                     <ul class="planets-nav-elems" (click)="planet_change(3)">TITAN</ul>
                 </nav>
             </div>
-            <div class="planet-name">{{display_planet.name}}</div>
-            <div class="planet-about">{{display_planet.description}}</div>
-            <div class="horizontal-line-box">
+            <div [ngClass]="{'ghayab': isActive, 'inactive': !isActive}" class="planet-name"  >{{display_planet.name}}</div>
+            <div [ngClass]="{'ghayab': isActive, 'inactive': !isActive}" class="planet-about">{{display_planet.description}}</div>
+            <div [ngClass]="{'ghayab': isActive, 'inactive': !isActive}" class="horizontal-line-box">
                 <div class="horizontal-line"></div>
             </div>
-            <div class="distance-travel-container">
-                <div class="dist-box">
+            <div class="distance-travel-container"> 
+                <div [ngClass]="{'ghayab': isActive, 'inactive': !isActive}" class="dist-box">
                     <p class="dist-heading">AVG. DISTANCE </p>
                     <div class="dist-travel-info">
                         {{display_planet.distance}}
                     </div>
                 </div>
-                <div class="travel-box">
+                <div [ngClass]="{'ghayab': isActive, 'inactive': !isActive}" class="travel-box">
                     <p class="dist-heading">EST TRAVEL TIME</p>
                     <div class="dist-travel-info">
                         {{display_planet.travel}}
                     </div>
                 </div>
+                <!-- <button [ngClass]="{'active': isActive, 'inactive': !isActive}">
+                    Click me
+                </button> -->
             </div>
         </div>
     </div>
