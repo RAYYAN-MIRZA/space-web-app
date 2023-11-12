@@ -128,51 +128,6 @@ span {
     padding: 0rem 0rem 0rem 2rem;    
 }
 
-/* 
-@media (max-width:1030px) {
-    .tech-name {
-        font-size: 45px;
-    }
-
-    .tech-descrip {
-        width: 87%;
-        font-size: 15px;
-    }
-    .tech-image{
-    }
-    .portrait{
-        width: 400px;
-        height: 427px;
-    }
-
-
-}
-
-@media (max-width:895px) {
-    .tech-term {
-        font-size: 13px;
-    }
-
-    .tech-descrip {
-        font-size: 14px;
-    }
-      .portrait{
-        width: 350px;
-        height: 377px;
-    }
-    .tech-name {
-        font-size: 40px;
-    }
-}
-
-@media (max-width:895px) {
-
-    .info-and-next {
-    }
-
-    .tech-image {
-    }
-} */
 
 @media (max-width:1075px) {
     .tech-image{
