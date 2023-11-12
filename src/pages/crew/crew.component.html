@@ -1,5 +1,5 @@
 <header><span>02</span>&nbsp;MEET YOUR CREW</header>
-<div class="crew-container" [ngClass]="{'ghayab': isActive, 'inactive': !isActive}">
+<div class="crew-container" >
     <div class="crew-info">
         <div class="crew-next-bar-two">
             <button (click)="memberChange(0)" class="next-button-two"></button>
@@ -7,11 +7,11 @@
             <button (click)="memberChange(2)" class="next-button-two"></button>
             <button (click)="memberChange(3)" class="next-button-two"></button>
         </div>
-        <div class="crew-occupation">{{display_crew.occupation}}
+        <div [ngClass]="{'ghayab': isActive, 'inactive': !isActive}" class="crew-occupation">{{display_crew.occupation}}
         </div>
-        <div class="member-name">{{display_crew.name}}
+        <div [ngClass]="{'ghayab': isActive, 'inactive': !isActive}" class="member-name">{{display_crew.name}}
         </div>
-        <div class="member-description">{{display_crew.description}}
+        <div [ngClass]="{'ghayab': isActive, 'inactive': !isActive}" class="member-description">{{display_crew.description}}
         </div>
         <div class="crew-next-bar">
             <button (click)="memberChange(0)" class="next-button"></button>
@@ -20,7 +20,7 @@
             <button (click)="memberChange(3)" class="next-button"></button>
         </div>
     </div>
-    <div class="crew-image">
+    <div [ngClass]="{'ghayab': isActive, 'inactive': !isActive}" class="crew-image">
         <img class="immg" src="{{display_crew.crew_member_image}}" alt="">
     </div>
 </div>

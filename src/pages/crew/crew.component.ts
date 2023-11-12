@@ -55,28 +55,21 @@ export class CrewComponent implements AfterViewInit {
       this.next_buttons[i].style.opacity = '0.174';
       this.next_buttons_two[i].style.opacity = "0.174";
     }
-    
+    this.next_buttons[num].style.opacity = "1";
+    this.next_buttons_two[num].style.opacity = "1";
     setTimeout(() => {
       switch (num) {
       case 0:
         this.display_crew = this.crew_data[0];
-        this.next_buttons[0].style.opacity = "1";
-        this.next_buttons_two[0].style.opacity = "1";
         break;
       case 1:
         this.display_crew = this.crew_data[1];
-        this.next_buttons[1].style.opacity = "1";
-        this.next_buttons_two[1].style.opacity = "1";
         break;
       case 2:
         this.display_crew = this.crew_data[2];
-        this.next_buttons[2].style.opacity = "1";
-        this.next_buttons_two[2].style.opacity = "1";
         break ;
       case 3:
         this.display_crew = this.crew_data[3];
-        this.next_buttons[3].style.opacity = "1";
-        this.next_buttons_two[3].style.opacity = "1";
         break;
       }
       this.isActive=false;
