@@ -214,6 +214,7 @@ p {
     .container {
         gap: 4rem;
         margin-top: 2rem;
+        /* border: 10px solid lime; */
     }
 
     .welcome_small {

@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     color: white;
+    /* position: relative; */
+    /* z-index: -200; */
 }
 
 .planet-container {
@@ -83,7 +85,7 @@ button.isActive{
 }
 
 .ghayab{        
-    animation: 1.5s ease fade;
+    animation: 1s ease fade;
 }
 
 @keyframes fade {
@@ -167,7 +169,7 @@ button.isActive{
 }
 
 .actual-planet-image {
-    animation: rotate 130s linear infinite;
+    animation: rotate 230s linear infinite;
 }
 
 @keyframes rotate {
@@ -370,7 +372,7 @@ button.isActive{
     .distance-travel-container {
         flex-direction: column;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .dist-box {

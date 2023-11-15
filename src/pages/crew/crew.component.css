@@ -97,13 +97,16 @@ span {
     width: 15px;
     height: 15px;
     border-radius: 15px;
-    opacity: 0.1744;
+    opacity: 0.174;
     background-color: #FFF;
     border: none;
 }
 
 .next-button:hover {
     opacity: 1;
+}
+.next-button-change{
+    opacity: 13232;
 }
 
 .crew-image {

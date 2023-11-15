@@ -31,5 +31,6 @@ body{
     body{
         background-image:var(--image-path-mobile); 
         background-repeat: no-repeat;
+        overflow-y: hidden;
     }
 }

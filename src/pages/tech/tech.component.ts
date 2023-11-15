@@ -10,7 +10,8 @@ export class TechComponent implements AfterViewInit {
   next_buttons!: HTMLCollectionOf<HTMLElement>
   current_button!: HTMLElement;
   display_tech!: tech;
-  isActive!:boolean;
+  isActive!: boolean;
+  next_buts_: number = 0;
   tech_data: tech[] = [
     {
       name: "Launch vehicle",
@@ -35,40 +36,20 @@ export class TechComponent implements AfterViewInit {
 
 
   ngOnInit(): void {
-    this.isActive=false;
+    this.isActive = false;
     this.display_tech = this.tech_data[0];
   }
 
   ngAfterViewInit(): void {
     this.next_buttons = document.getElementsByClassName('next-buts') as HTMLCollectionOf<HTMLElement>
-    this.next_buttons[0].style.backgroundColor = "white";
-    this.next_buttons[0].style.color = "#0b0e17";
   }
 
   change_image(num: number): void {
-    this.isActive=true;
-    for (let i = 0; i < 3; i++) {
-      this.next_buttons[i].style.color = "white";
-      this.next_buttons[i].style.backgroundColor = "transparent";
-    }
-    this.next_buttons[num].style.backgroundColor = "white";
-    this.next_buttons[num].style.color = "#0b0e17";
+    this.isActive = true;
+    this.next_buts_ = num;
     setTimeout(() => {
-    switch (num) {
-      case 0:
-        this.display_tech = this.tech_data[0];
-        break;
-      case 1:
-        this.display_tech = this.tech_data[1];
-        break;
-      case 2:
-        this.display_tech = this.tech_data[2];
-        break;
-      }
-      this.isActive=false;
-    },800);
+      this.display_tech = this.tech_data[num];
+      this.isActive = false;
+    }, 800);
   }
-
-
-
 }

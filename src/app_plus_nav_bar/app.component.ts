@@ -37,11 +37,11 @@ export class AppComponent implements AfterViewInit {
   }
   ngAfterViewInit(): void {
     this.root = document.documentElement;
-    // this.root.style.setProperty('--image-path', 'url("../../assets/starter-code/assets/technology/background-technology-desktop.jpg")');
     this.body = document.querySelector("body") as HTMLElement;
     this.ham_menu = document.querySelector(".ham_menu") as HTMLElement;
     this.ham = document.querySelector(".ham") as HTMLElement;
   }
+
   route_changed(route: string): void {
 
     switch (this.routing_map.get(route)) {

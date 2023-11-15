@@ -58,6 +58,13 @@ a {
 }
 
 .section {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
     border: none;
     padding: 1rem 0rem;
     height: 100%;
@@ -69,6 +76,13 @@ a {
 }
 
 .num {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
     font-weight: 600;
     font-size: 10px;
 }
@@ -96,10 +110,11 @@ a {
     color: #ffffff;
     width: 70%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     justify-self: right;
     justify-content: right;
     gap: 2rem;
+    z-index: 100;
 }
 
 .cross {
@@ -179,6 +194,13 @@ a {
     }
 
     .section {
+        color: #FFF;
+        font-family: Barlow Condensed;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.362px;
         margin: 0;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;

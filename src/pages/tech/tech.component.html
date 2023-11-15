@@ -4,9 +4,12 @@
 <div class="tech-container">
     <div class="info-and-next">
         <div class="next-boxes">
-            <button (click)="change_image(0)" class="next-buts">1</button>
-            <button (click)="change_image(1)" class="next-buts">2</button>
-            <button (click)="change_image(2)" class="next-buts">3</button>
+            <button (click)="change_image(0)" class="next-buts"
+                [ngClass]="{'next-buts-change':next_buts_===0}">1</button>
+            <button (click)="change_image(1)" class="next-buts"
+                [ngClass]="{'next-buts-change':next_buts_===1}">2</button>
+            <button (click)="change_image(2)" class="next-buts"
+                [ngClass]="{'next-buts-change':next_buts_===2}">3</button>
         </div>
         <div class="tech-info" [ngClass]="{'ghayab': isActive, 'inactive': !isActive}">
             <div class="tech-term">THE TERMINOLOGY</div>
@@ -19,6 +22,3 @@
         <img class="landscape" src="{{display_tech.image_landscape}}" alt="">
     </div>
 </div>
-
-
-<!-- <img src="../../assets/starter-code/assets/technology/image-spaceport-landscape.jpg" alt=""> -->

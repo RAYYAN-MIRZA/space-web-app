@@ -70,6 +70,10 @@ span {
     background-color: white;
     color: #0b0e17;
 }
+.next-buts-change{
+    background-color: white;
+    color: #0b0e17;
+}
 
 .tech-info {
     display: flex;
