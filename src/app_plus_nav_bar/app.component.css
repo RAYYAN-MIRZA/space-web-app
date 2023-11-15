@@ -64,6 +64,7 @@ a {
     font-style: normal;
     font-weight: 400;
     border: none;
+    letter-spacing: 2.5px;
     padding: 1rem 0rem;
     height: 100%;
     cursor: pointer;
@@ -195,6 +196,7 @@ a {
         margin: 0;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        letter-spacing: 0.5px;
     }
 
     .logo {
