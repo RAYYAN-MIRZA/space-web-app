@@ -332,9 +332,8 @@ span {
         background: #FFF;
         opacity: 0.1744;
     }
-
-    .next-button-two:hover {
+    .next-button-change{
         opacity: 1;
     }
-
+    
 }
