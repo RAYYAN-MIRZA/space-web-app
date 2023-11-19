@@ -100,7 +100,7 @@ button.isActive{
     }    
 }
 .inactive{
-    animation: 500ms ease faded;
+    animation: 600ms ease faded;
 
 }
 
