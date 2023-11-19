@@ -43,7 +43,7 @@ span {
 .next-boxes {
     display: flex;
     flex-direction: column;
-    padding: 6rem 0rem 0rem 8rem;   
+    padding: 6rem 0rem 0rem 8rem;
     gap: 2rem;
 }
 
@@ -70,7 +70,8 @@ span {
     background-color: white;
     color: #0b0e17;
 }
-.next-buts-change{
+
+.next-buts-change {
     background-color: white;
     color: #0b0e17;
 }
@@ -82,22 +83,44 @@ span {
     padding-top: 6rem;
     padding-left: 2rem;
 }
- .ghayab{
+
+.ghayab {
     animation: 1s ease-in-out fade;
 }
 
 @keyframes fade {
-    0%{
+    0% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0.0001;
     }
-    100%{
+
+    100% {
         opacity: 0.00000001;
-    }    
+    }
 }
- 
+.inactive{
+    animation: 500ms ease faded;
+
+}
+
+@keyframes faded {
+    0% {
+        opacity: 0.00000001;
+    }
+    
+    50% {
+        opacity: 0.0001;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
 .tech-term {
     color: #D0D6F9;
     font-family: Barlow Condensed;
@@ -129,23 +152,26 @@ span {
 }
 
 .tech-image {
-    padding: 0rem 0rem 0rem 2rem;    
+    padding: 0rem 0rem 0rem 2rem;
 }
 
 
 @media (max-width:1075px) {
-    .tech-image{
+    .tech-image {
         padding: 0;
         left: 0;
         right: 0;
     }
-    .portrait{
+
+    .portrait {
         display: none;
     }
-    .landscape{
+
+    .landscape {
         width: 100%;
         height: 100%;
     }
+
     .tech-container {
         flex-direction: column-reverse;
         align-items: center;
@@ -289,8 +315,9 @@ span {
         flex-shrink: 0;
         font-size: 16px;
     }
-    .next-boxes{
-        gap :1rem;
+
+    .next-boxes {
+        gap: 1rem;
     }
 
     .tech-term {

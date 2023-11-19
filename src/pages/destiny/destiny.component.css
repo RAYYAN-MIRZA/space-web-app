@@ -84,7 +84,7 @@ button.isActive{
     background-color: blue;                 
 }
 
-.ghayab{        
+.ghayab{      
     animation: 1s ease fade;
 }
 
@@ -99,6 +99,25 @@ button.isActive{
         opacity: 0.00000001;
     }    
 }
+.inactive{
+    animation: 500ms ease faded;
+
+}
+
+@keyframes faded {
+    0% {
+        opacity: 0.00000001;
+    }
+    
+    50% {
+        opacity: 0.0001;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
 .planets-nav-elems {
     color: white;
     cursor: pointer;

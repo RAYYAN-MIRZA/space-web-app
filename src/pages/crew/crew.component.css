@@ -26,21 +26,48 @@ span {
     width: 100%;
 
 }
-.ghayab{        
+
+.inactive{
+    animation: 500ms ease faded;
+
+}
+
+@keyframes faded {
+    0% {
+        opacity: 0.00000001;
+    }
+    
+    50% {
+        opacity: 0.0001;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+.ghayab {
     animation: 1.5s ease fade;
 }
 
 @keyframes fade {
-    0%{
+    0% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0.0001;
     }
-    100%{
+
+    100% {
         opacity: 0.00000001;
-    }    
+    }
 }
+
+
 .crew-info {
     display: flex;
     width: 60%;
@@ -105,11 +132,13 @@ span {
 .next-button:hover {
     opacity: 1;
 }
-.next-button-change{
+
+.next-button-change {
     opacity: 13232;
 }
 
 .crew-image {
+    transition: opacity 1000ms ease;
     display: flex;
     flex-direction: column;
     margin-top: -2rem;
@@ -121,8 +150,8 @@ span {
 .immg {
     /* width: 568.072px;
     height: 712px; */
-    width: 350px;    
-    height:494px;
+    width: 350px;
+    height: 494px;
     flex-shrink: 0;
 }
 
@@ -231,7 +260,7 @@ span {
 
     .immg {
         width: 456.372px;
-        height: 572px;        
+        height: 572px;
         flex-shrink: 0;
     }
 
@@ -331,9 +360,11 @@ span {
         border-radius: 10px;
         background: #FFF;
         opacity: 0.1744;
+        transition: opacity 500ms ease;
     }
-    .next-button-change{
+
+    .next-button-change {
         opacity: 1;
     }
-    
+
 }
